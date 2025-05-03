@@ -7,86 +7,119 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
       color: #111;
-      text-align: center;
     }
     header {
-      background: linear-gradient(to right, #ff00ff, #00ffff);
+      background: linear-gradient(to right, magenta, cyan);
       padding: 2em 1em;
+      text-align: center;
     }
     h1 {
       margin: 0;
       font-size: 2.5em;
-      color: #000;
     }
     .slogan {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin-top: 0.5em;
-      color: #444;
     }
-    nav {
-      background-color: #f0f0f0;
-      padding: 1em;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    nav a {
-      margin: 0 1em;
+    .cta-buttons a {
+      display: inline-block;
+      margin: 1em 0.5em;
+      padding: 0.7em 1.5em;
+      background: yellow;
+      color: black;
+      border-radius: 30px;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
     }
-    nav a:hover {
-      color: #00cccc;
+    section {
+      padding: 2em 1.2em;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2, h3 {
+      color: #ff00cc;
+    }
+    .service-box {
+      border-left: 5px solid #00cccc;
+      padding-left: 1em;
+      margin-bottom: 1.5em;
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>CVW CREONEX LLC</h1>
-    <div class="slogan">つなぐ、つくる、育てる福祉テック</div>
+    <p class="slogan">つなぐ、つくる、育てる福祉テック</p>
+    <div class="cta-buttons">
+      <a href="#services">サービスを見る</a>
+      <a href="#contact">お問い合わせ</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#">トップ</a>
-    <a href="#">事業内容</a>
-    <a href="#">開発中ツール</a>
-    <a href="#">お問い合わせ</a>
-    <main style="padding: 2em;">
-  <section style="margin-bottom: 2em;">
-    <h2 style="color:#00cccc;">事業概要</h2>
+  <section id="vision">
+    <h2>CVW CREONEX LLC の想い</h2>
     <p>
-      CVW CREONEX LLC は、福祉×テクノロジーの融合を目指すスタートアップです。<br />
-      子ども、保護者、支援者がつながりやすい社会をデジタルの力で実現します。
+      誰も取り残さない福祉へ。<br>
+      私たちは、福祉現場のリアルとテクノロジーをつなぎます。
     </p>
   </section>
 
-  <section style="margin-bottom: 2em;">
-    <h3 style="color:#ff00ff;">1. LINE福祉ツール開発</h3>
+  <section id="services">
+    <h2>サービス紹介</h2>
+
+    <div class="service-box">
+      <h3>LINE福祉ツール</h3>
+      <p>
+        保護者や支援者とつながる相談・記録・通知を自動化。<br>
+        LINE上で簡単に運用できる支援ツールを開発中。
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>発達支援アプリ</h3>
+      <p>
+        子どもの特性に合わせた目標設定や行動記録を簡単に管理。<br>
+        支援者と保護者の連携をサポートします。
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>保護者サポート実証</h3>
+      <p>
+        地域団体と協働し、保護者向けサポート企画を検証中。<br>
+        デジタルと対話を融合した支援を実現。
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>社会的意義</h2>
     <p>
-      保護者・福祉関係者向けに、相談・通知・記録機能を備えたLINE連携ツールを開発中。<br />
-      シンプルかつセキュアにコミュニケーションと情報管理を支援。
+      私たちは「子ども基本法」「こども家庭庁」などの方針に沿って、<br>
+      現場で必要とされる福祉テックを共に作ります。
     </p>
   </section>
 
-  <section style="margin-bottom: 2em;">
-    <h3 style="color:#ff00ff;">2. 発達支援アプリ</h3>
-    <p>
-      子ども一人ひとりの特性に合わせた支援記録や課題設定ができるアプリを開発。<br />
-      保護者と支援者が連携して子どもの成長を支えます。
-    </p>
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>ご相談・連携・取材など、お気軽にご連絡ください。</p>
+    <p><a href="mailto:cvwjapan@gmail.com">cvwjapan@gmail.com</a></p>
   </section>
 
-  <section style="margin-bottom: 2em;">
-    <h3 style="color:#ff00ff;">3. 保護者サポート実証企画</h3>
-    <p>
-      地域や福祉団体と連携し、子育てに悩む保護者の声を元にしたサポートプログラムを試験運用。<br />
-      課題発見から実装まで一貫支援。
-    </p>
-  </section>
-    </main>
-  </nav>
+  <footer>
+    &copy; 2025 CVW CREONEX LLC. All rights reserved.
+  </footer>
+
 </body>
 </html>
